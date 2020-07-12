@@ -12,11 +12,11 @@ public class Gear {
     // private int rim;
     // private int tire;
 
-    public void Gear(int chainring, int cog, int rim, int tire){
+    public void Gear(int chainring, int cog) { //, int rim, int tire){
         this.chainring = chainring;
         this.cog = cog;
-        this.rim = rim;
-        this.tire = tire;
+        // this.rim = rim;
+        // this.tire = tire;
     }
     
     public int getChainRing(){
@@ -31,7 +31,7 @@ public class Gear {
         return getChainRing() * 1.0/ getCog();
     }
 
-    public double getGearInches() {
-        return ratio * (rim + (tire * 2));
-    }
+    // public double getGearInches() {
+    //     return ratio * (rim + (tire * 2));
+    // }
 }
