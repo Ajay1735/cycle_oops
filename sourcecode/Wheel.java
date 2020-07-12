@@ -18,11 +18,11 @@ public class Wheel {
         return rim;
     }
 
-    public int tire(){
+    public int getTire(){
         return tire;
     }
-    
+
     public int getDiameter() {
-        return rim + (tire * 2);
+        return getRim() + (getTire() * 2);
     }
 } 
