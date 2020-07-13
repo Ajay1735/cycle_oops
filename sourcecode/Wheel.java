@@ -8,7 +8,7 @@ java -cp classFiles cycleOops.Wheel
 */
 
 public class Wheel {
-    
+
     private int rim;
     private int tire; 
 
@@ -33,4 +33,8 @@ public class Wheel {
         return getDiameter()*Math.PI;
     }
 
+    public String toString() {
+		return "Rim: " + getRim() + ", Tire: " + getTire();
+    }
+    
 } 

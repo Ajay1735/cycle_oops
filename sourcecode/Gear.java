@@ -31,6 +31,10 @@ public class Gear {
         return getChainRing() * 1.0/ getCog();
     }
 
+    public String toString() {
+		return "ChainRing: " + getChainRing() + ", Cog: " + getCog();
+    }
+    
     // public double getGearInches() {
     //     return ratio * (rim + (tire * 2));
     // }
