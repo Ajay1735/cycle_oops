@@ -1,5 +1,7 @@
 package cycleOops;
 
+import cycleOops.MountainBike;
+
 /*
 javac CycleMainClass.java -d classFiles
 java -cp classFiles cycleOops.CycleMainClass
@@ -22,12 +24,18 @@ public class CycleMainClass {
     	System.out.println(wheel2.getDiameter());
         System.out.println(wheel2.getCircumference());
         
-    	Cycle cycle1 = new Cycle(gear1, wheel1);
+    	Cycle cycle1 = new Cycle(Size.SMALL, gear1, wheel1, "10-chain", 12);
         System.out.println(cycle1.getGearInches());
         
-        Cycle cycle2 = new Cycle(gear1, wheel2);
+        Cycle cycle2 = new Cycle(Size.MEDIUM, gear2, wheel2, "11-chain", 15);
         System.out.println(cycle2.getGearInches());
-    
+
+        Cycle cycle3 = new MountainBike(Size.SMALL, gear1, wheel1, "10-chain", 12, "aFrontShock", "aRearShock");
+        System.out.println(cycle3);
+
+        Cycle cycle4 = new RoadBike(Size.MEDIUM, gear2, wheel2, "10-chain", 15, "green");
+        System.out.println(cycle4);
+
     }
 
 }
